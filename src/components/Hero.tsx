@@ -37,8 +37,8 @@ export default function Hero() {
         setZoomImage(zoomImage => !zoomImage);
     }
 
-    const progressCircle:any = useRef<SVGSVGElement>(null);
-    const progressContent:any = useRef<HTMLSpanElement>(null);
+    const progressCircle: any = useRef<SVGSVGElement>(null);
+    const progressContent: any = useRef<HTMLSpanElement>(null);
 
     const onAutoplayTimeLeft = (_: any, time: any, progress: any): void => {
         progressCircle.current?.style.setProperty('--progress', 1 - progress);
@@ -117,22 +117,27 @@ export default function Hero() {
                                 </p>
                                 <div className="text-lg md:text-xl lg:text-xl">
                                     <span className="text-2xl font-bold text-[#FF5722]">
-                                       <Textra
-                                           data={[
-                                               'Membangun akses jalan yang layak',
-                                               'Pendidikan yang lebih berkualitas',
-                                               'Pemerataan berkeadilan bansos dan pkh',
-                                               'Memperluas jangkauan internet'
-                                           ]}
-                                           effect='scale'
-                                           duration={1500}
-                                       />
+                                        <Textra
+                                            data={[
+                                                'Membangun akses jalan yang layak',
+                                                'Pendidikan yang lebih berkualitas',
+                                                'Pemerataan berkeadilan bansos dan pkh',
+                                                'Memperluas jangkauan internet'
+                                            ]}
+                                            effect='scale'
+                                            duration={1500}
+                                        />
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="container">
+                <div className="chevron"></div>
+                <div className="chevron"></div>
+                <div className="chevron"></div>
             </div>
         </section>
     );
