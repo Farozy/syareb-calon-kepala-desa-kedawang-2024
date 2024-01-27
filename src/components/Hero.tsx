@@ -79,7 +79,7 @@ export default function Hero() {
                         {listImages.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <Image
-                                    className="object-cover w-full rounded shadow-lg lg:rounded-none lg:shadow-none h-screen md:h-[25rem] lg:h-full"
+                                    className="object-cover w-full rounded shadow-lg lg:rounded-none lg:shadow-none h-[26rem] md:h-[25rem] lg:h-full"
                                     src={`/slides/${item.title}`}
                                     alt={item.alt} width={500} height={500}
                                     priority
