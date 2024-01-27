@@ -74,6 +74,7 @@ export default function Navbar() {
         <>
             {/*<nav className="relative px-4 py-4 flex justify-between items-center shadow-md z-20">*/}
             <nav
+                // className="relative px-4 py-4 flex justify-between items-center shadow-md z-20"
                 className={`fixed w-full top-0 left-0 px-4 py-2 flex justify-between items-center transition duration-500 ${scrollBackground} z-50`}
             >
                 <a className={`text-xl md:text-2xl font-bold leading-none ${scrollColor}`} href="/">

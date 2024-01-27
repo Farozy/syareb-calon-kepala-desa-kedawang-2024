@@ -41,7 +41,7 @@ export default function VisiMisi() {
                     />
                 </div>
                 <div className="md:w-[550px] w-full mt-8">
-                    <div className="mb-6" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div className="mb-6" data-aos="fade-up" data-aos-duration="1000">
                         <h5 className="font-bold md:font-semibold mb-3 text-center text-3xl">Visi</h5>
                         <p className="text-center">
                             “ Terwujudnya Desa Kedawang yang aman, sehat, cerdas dan sejahtera “

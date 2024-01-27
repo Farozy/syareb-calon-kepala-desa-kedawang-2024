@@ -13,7 +13,7 @@ export default function Profile() {
             </div>
             <div
                 className="max-w-4xl flex items-center flex-wrap mx-auto my-32 lg:my-10"
-                data-aos="zoom-out-up" data-aos-duration="1000"
+                data-aos="zoom-in" data-aos-duration="1000"
             >
                 <div
                     className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-gray-900 opacity-75 mx-6 lg:mx-0"

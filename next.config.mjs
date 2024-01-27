@@ -9,7 +9,8 @@ const nextConfig = {
             'cdn-icons-png.flaticon.com',
             'sedan-rembang.desa.id',
             'cdn3.iconfinder.com',
-            'cdn.icon-icons.com'
+            'cdn.icon-icons.com',
+            'miro.medium.com'
         ],
     },
 };
