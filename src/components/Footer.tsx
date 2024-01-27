@@ -49,9 +49,9 @@ export default function Footer() {
                 className="px-6 mx-auto space-y-6 divide-y dark:divide-gray-400 md:space-y-8 divide-opacity-50">
                 <div className="grid grid-cols-12">
                     <div className="col-span-full md:pb-0 md:col-span-6 md:my-auto mb-6">
-                        <div className="flex justify-center space-x-3 md:justify-start">
+                        <div className="flex flex-col-reverse lg:flex-row mx-auto justify-center space-x-0 lg:space-x-3 md:justify-start">
                             <div
-                                className="flex items-center justify-center w-1/4 pl-2 pt-1 rounded-xl bg-[#7D0000]">
+                                className="flex items-center justify-center mx-auto lg:mx-0 w-1/4 pl-2 pt-1 rounded-xl bg-[#7D0000]">
                                 <Image src="/images/caleg.png" alt="caleg" width={500} height={500}/>
                             </div>
                             <span className="self-center text-2xl font-semibold">Fulana</span>
@@ -89,7 +89,7 @@ export default function Footer() {
                 <div className="grid justify-center pt-6 lg:justify-between">
                     <div
                         className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-                        <span>© Farozy, Kedawang, 2024 </span>
+                        <span>©Farozy, Kedawang, 2024 </span>
                         <a rel="noopener noreferrer" href="#">
                             <span>Privacy policy</span>
                         </a>
