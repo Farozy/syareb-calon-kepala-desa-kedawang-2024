@@ -48,7 +48,7 @@ export default function Hero() {
     };
 
     return (
-        <section id="beranda" className="pt-16 md:pt-0 h-screen md:h-full lg:h-full">
+        <section id="beranda" className="pt-16 md:pt-0">
             <div className="flex justify-between items-center lg:items-stretch lg:flex-row-reverse flex-col-reverse">
                 <div
                     className={`relative overflow-hidden w-full mx-auto lg:w-8/12 lg:max-w-full`}
