@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="flex justify-between items-center lg:items-stretch lg:flex-row-reverse flex-col-reverse">
                 <div
                     className={`relative overflow-hidden w-full mx-auto lg:w-8/12 lg:max-w-full`}
-                    data-aos="fade-left"
+                    data-aos="zoom-in-down"
                     data-aos-duration="2000"
                 >
                     <svg
@@ -97,7 +97,7 @@ export default function Hero() {
                 </div>
                 <div
                     className="w-full md:max-w-[32rem] px-4 lg:px-6 z-20 hero_bg"
-                    data-aos="fade-right"
+                    data-aos="zoom-in-up"
                     data-aos-duration="1500"
                     // className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl"
                 >
@@ -111,7 +111,7 @@ export default function Hero() {
                         </div>
                         <div
                             className="relative px-2 py-2 md:py-3">
-                            <div className="text-center w-80 md:w-full lg:w-full">
+                            <div className="text-center w-full">
                                 <p className="text-slate-800 text-lg md:text-xl lg:text-xl font-bold uppercase">
                                     Perubahan Untuk
                                 </p>
@@ -121,7 +121,7 @@ export default function Hero() {
                                            data={[
                                                'Membangun akses jalan yang layak',
                                                'Pendidikan yang lebih berkualitas',
-                                               'Pemerataan bansos dan pkh',
+                                               'Pemerataan berkeadilan bansos dan pkh',
                                                'Memperluas jangkauan internet'
                                            ]}
                                            effect='scale'
