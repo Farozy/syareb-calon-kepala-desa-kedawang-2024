@@ -17,7 +17,7 @@ export default function Home() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 100);
+        }, 5000);
 
         AOS.init();
     }, [])
