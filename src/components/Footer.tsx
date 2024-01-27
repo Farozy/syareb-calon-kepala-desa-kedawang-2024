@@ -46,7 +46,7 @@ export default function Footer() {
     return (
         <footer className="py-6 dark:bg-gray-800 dark:text-gray-50">
             <div
-                className="container px-6 mx-auto space-y-6 divide-y dark:divide-gray-400 md:space-y-8 divide-opacity-50">
+                className="px-6 mx-auto space-y-6 divide-y dark:divide-gray-400 md:space-y-8 divide-opacity-50">
                 <div className="grid grid-cols-12">
                     <div className="col-span-full md:pb-0 md:col-span-6 md:my-auto mb-6">
                         <div className="flex justify-center space-x-3 md:justify-start">
@@ -109,7 +109,9 @@ export default function Footer() {
                         </a>
                         <a rel="noopener noreferrer" href="https://www.instagram.com/" title="Instagram"
                            className="flex items-center justify-center w-10 h-10 rounded-full dark:bg-violet-400 dark:text-gray-900">
-                            <svg width="28px" height="28px" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                            <svg width="28px" height="28px" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                 y="0px"
+                                 viewBox="0 0 48 48">
                                 <g>
                                     <path className="instagram--black" d="M25.6,8c2.9,0,3.5,0,5,0.1c1.7,0.1,2.9,0.3,3.9,0.7c1.1,0.4,1.9,1,2.8,1.8s1.4,1.8,1.8,2.8
                                     c0.4,1,0.7,2.2,0.7,3.9C40,19,40,19.6,40,23V25c0,3.4,0,4-0.1,5.6c-0.1,1.7-0.3,2.9-0.7,3.9c-0.4,1.1-1,1.9-1.8,2.8
@@ -129,7 +131,9 @@ export default function Footer() {
                         </a>
                         <a rel="noopener noreferrer" href="https://www.facebook.com" title="Facebook"
                            className="flex items-center justify-center w-10 h-10 rounded-full dark:bg-violet-400 dark:text-gray-900">
-                            <svg width="28px" height="28px" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                            <svg width="28px" height="28px" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                 y="0px"
+                                 viewBox="0 0 48 48">
                                 <g>
                                     <path className="facebook--black" d="M30.1,40V27.6h4.2l0.6-4.8h-4.8v-3.1c0-1.4,0.4-2.4,2.4-2.4l2.6,0V13c-0.4-0.1-2-0.2-3.7-0.2
                                     c-3.7,0-6.2,2.3-6.2,6.4v3.6h-4.2v4.8h4.2V40H30.1z M9.8,40c-1,0-1.8-0.8-1.8-1.8V9.8C8,8.8,8.8,8,9.8,8h28.5c1,0,1.8,0.8,1.8,1.8
