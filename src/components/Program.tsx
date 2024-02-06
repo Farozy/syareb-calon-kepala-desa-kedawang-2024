@@ -11,12 +11,12 @@ export default function Program() {
         {
             image: "sdm.jpg",
             title: "Peningkatan SDM Desa",
-            desc : "Update peningkatan kualitas kehidupan",
+            desc : "Untuk peningkatan kualitas kehidupan",
         },
         {
             image: "jaringan.jpg",
             title: "Jaringan Internet Desa",
-            desc : "Kesenjangan akses internet di pedesaan",
+            desc : "Kesenjangan akses internet di desa",
         },
         {
             image: "keamanan.jpg",
