@@ -1,9 +1,9 @@
 import type {Metadata} from "next";
-import {Inter, Roboto} from "next/font/google";
+import {Roboto} from "next/font/google";
 import "./globals.css";
 import React from "react";
 
-const inter = Inter({subsets: ["latin"]});
+// const inter = Inter({subsets: ["latin"]});
 const roboto = Roboto({
     weight: ['400', '700'],
     style: ['normal', 'italic'],
@@ -16,9 +16,7 @@ export const metadata: Metadata = {
     description: "Calon Kepala Desa Kedawang",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+export default function RootLayout({children}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
