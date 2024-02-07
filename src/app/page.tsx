@@ -6,13 +6,17 @@ import Profile from "@/components/Profile";
 import About from "@/components/About";
 import Program from "@/components/Program";
 import Footer from "@/components/Footer";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Preloader from "@/components/Preloader";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default function Home() {
+const Home = ({sessionData}: any) => {
     const [loading, setLoading] = useState(true);
+    // const sessionData = context.req.cookies.session ? JSON.parse(context.req.cookies.session) : null;
+    const sessionWhatsApp = sessionData ? JSON.stringify(sessionData) : 'Belum ada session';
+
+    console.log(sessionWhatsApp);
 
     useEffect(() => {
         setTimeout(() => {
@@ -40,3 +44,5 @@ export default function Home() {
         </main>
     );
 }
+
+export default Home;
