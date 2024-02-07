@@ -11,12 +11,8 @@ import Preloader from "@/components/Preloader";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Home = ({sessionData}: any) => {
+const Home = () => {
     const [loading, setLoading] = useState(true);
-    // const sessionData = context.req.cookies.session ? JSON.parse(context.req.cookies.session) : null;
-    const sessionWhatsApp = sessionData ? JSON.stringify(sessionData) : 'Belum ada session tersedia';
-
-    console.log(sessionWhatsApp);
 
     useEffect(() => {
         setTimeout(() => {

@@ -134,7 +134,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="container block lg:hidden">
+            <div className="container mx-auto block lg:hidden">
                 <div className="chevron"></div>
                 <div className="chevron"></div>
                 <div className="chevron"></div>
