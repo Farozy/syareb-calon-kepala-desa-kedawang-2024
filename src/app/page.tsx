@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 const Home = ({sessionData}: any) => {
     const [loading, setLoading] = useState(true);
     // const sessionData = context.req.cookies.session ? JSON.parse(context.req.cookies.session) : null;
-    const sessionWhatsApp = sessionData ? JSON.stringify(sessionData) : 'Belum ada session';
+    const sessionWhatsApp = sessionData ? JSON.stringify(sessionData) : 'Belum ada session tersedia';
 
     console.log(sessionWhatsApp);
 
