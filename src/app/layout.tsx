@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import {Roboto} from "next/font/google";
 import "./globals.css";
 import React from "react";
+import {GlobalContextProvider} from "./context/store";
 
 // const inter = Inter({subsets: ["latin"]});
 const roboto = Roboto({
@@ -21,7 +22,11 @@ export default function RootLayout({children}: Readonly<{
 }>) {
     return (
         <html lang="en">
-        <body className={roboto.className}>{children}</body>
+        <body className={roboto.className}>
+        <GlobalContextProvider>
+            {children}
+        </GlobalContextProvider>
+        </body>
         </html>
     );
 }

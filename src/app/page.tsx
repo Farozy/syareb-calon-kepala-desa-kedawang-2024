@@ -10,21 +10,26 @@ import React, {useEffect, useState} from "react";
 import Preloader from "@/components/Preloader";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ModalWindows from "@/components/ModalWindows";
+import { useGlobalContext } from "./context/store";
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
+    const { modal } = useGlobalContext();
 
     useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 5000);
+        if(!modal) {
+            setTimeout(() => {
+                setLoading(false);
+            }, 5000);
 
-        AOS.init();
-    }, [])
+            AOS.init();
+        }
+    }, [modal])
 
     return (
         <main className="min-h-screen w-full">
-            {loading ? (
+            {modal ? <ModalWindows /> : loading ? (
                 <Preloader/>
             ) : (
                 <>
@@ -37,6 +42,19 @@ const Home = () => {
                     <Footer/>
                 </>
             )}
+            {/*{loading ? (*/}
+            {/*    <Preloader/>*/}
+            {/*) : (*/}
+            {/*    <>*/}
+            {/*        <Navbar/>*/}
+            {/*        <Hero/>*/}
+            {/*        <VisiMisi/>*/}
+            {/*        <Program/>*/}
+            {/*        <Profile/>*/}
+            {/*        <About/>*/}
+            {/*        <Footer/>*/}
+            {/*    </>*/}
+            {/*)}*/}
         </main>
     );
 }
