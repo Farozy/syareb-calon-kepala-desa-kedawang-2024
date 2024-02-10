@@ -29,7 +29,7 @@ export default function ModalWindows() {
 
         await axios({
             method: 'get',
-            url: 'http://laravel.test/api/kedawang/token',
+            url: 'https://myapp-pre-wedding.000webhostapp.com/api/kedawang/token',
             httpsAgent: agent,
             headers: {
                 Authorization: `Bearer ${token}`
