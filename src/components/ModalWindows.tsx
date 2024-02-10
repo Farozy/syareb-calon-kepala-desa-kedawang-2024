@@ -19,7 +19,7 @@ export default function ModalWindows() {
 
         await axios({
             method: 'get',
-            url: 'http://laravel.test/api/kedawang/token',
+            url: 'https://f0a5-2400-9800-763-85f4-8181-883-3d6a-ccd4.ngrok-free.app/api/kedawang/token',
             headers: {
                 Authorization: `Bearer ${token}`
             }
