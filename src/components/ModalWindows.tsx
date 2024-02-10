@@ -7,19 +7,30 @@ import {Toast} from "@/config/Toast";
 import {isTokenExpired} from "@/config/Token";
 import {useGlobalContext} from "@/app/context/store";
 import {useState} from "react";
+import https from "https";
 
 export default function ModalWindows() {
     const [isLoading, setIsloading] = useState(false)
     const {setModal} = useGlobalContext();
     const whatsappMessage = encodeURIComponent("Start");
     const phoneNumber = '6287811044689';
+    const agent = new https.Agent({ rejectUnauthorized: false });
     const doFormSubmit = async (values: any) => {
         setIsloading(true);
         const token = values.token;
 
+        // axios.get('https://myapp-pre-wedding.000webhostapp.com/api/kedawang/contact', { httpsAgent: agent })
+        //     .then((response) => {
+        //         console.log(response.data);
+        //     })
+        //     .catch((error) => {
+        //         console.error(error);
+        //     });
+
         await axios({
             method: 'get',
-            url: 'https://f0a5-2400-9800-763-85f4-8181-883-3d6a-ccd4.ngrok-free.app/api/kedawang/token',
+            url: 'http://laravel.test/api/kedawang/token',
+            httpsAgent: agent,
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -46,7 +57,8 @@ export default function ModalWindows() {
                     }, 2000)
                 }
             })
-            .catch(() => {
+            .catch((error) => {
+                console.log(error)
                 setTimeout(() => {
                     setIsloading(false);
                     Toast('error', "Token yang dimasukkan salah", 'top-center', '❌');
