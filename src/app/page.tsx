@@ -1,24 +1,31 @@
 'use client';
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import VisiMisi from "@/components/VisiMisi";
-import Profile from "@/components/Profile";
-import About from "@/components/About";
-import Program from "@/components/Program";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import Hero from "@/components/Hero/Hero";
+import VisiMisiMain from "@/components/VisiMisi/VisiMisiMain";
+import Profile from "@/components/Profile/Profile";
+import About from "@/components/About/About";
+import Program from "@/components/Program/Program";
+import Footer from "@/components/Footer/Footer";
 import React, {useEffect, useState} from "react";
-import Preloader from "@/components/Preloader";
+import Preloader from "@/components/Preloader/Preloader";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ModalWindows from "@/components/ModalWindows";
+import WelcomeMain from "@/components/Welcome/WelcomeMain";
 import { useGlobalContext } from "./context/store";
+import Cookies from "js-cookie";
+import axios from "axios";
+import {ApiToken} from "@/config/API";
+import {isTokenExpired} from "@/utils/Token";
+import {Toast} from "@/utils/Toast";
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
-    const { modal } = useGlobalContext();
+    const { modal, setModal } = useGlobalContext();
+    const [expiredToken, setExpiredToken] = useState(true);
+    const token_kades: any = Cookies.get('token_kades');
 
     useEffect(() => {
-        if(!modal) {
+        if(!modal || expiredToken) {
             setTimeout(() => {
                 setLoading(false);
             }, 5000);
@@ -27,34 +34,58 @@ const Home = () => {
         }
     }, [modal])
 
+    useEffect(() => {
+        const checkToken = async () => {
+            if(token_kades !== undefined) {
+                await axios({
+                    method: 'get',
+                    url: ApiToken,
+                    headers: {
+                        Authorization: `Bearer ${token_kades}`
+                    }
+                })
+                    .then(async (response: any) => {
+                        const expiryToken = await response.data.data.expiry_date;
+                        const resExpiryToken: any = isTokenExpired(expiryToken);
+                        if(!resExpiryToken) {
+                            setExpiredToken(resExpiryToken);
+                            setModal(false);
+                        }
+
+                        resExpiryToken ? setLoading(false) : '';
+                    })
+                    .catch(() => {
+                        setTimeout(() => {
+                            Toast('error', "Token yang dimasukkan salah", 'top-center', '❌');
+                        }, 2000)
+                    });
+            }
+        }
+
+        checkToken();
+
+        setTimeout(() => {
+
+        }, 5000)
+
+        AOS.init();
+    }, [])
+
     return (
         <main className="min-h-screen w-full">
-            {modal ? <ModalWindows /> : loading ? (
-                <Preloader/>
+            {loading ? <Preloader/> : expiredToken && modal ? (
+                <WelcomeMain/>
             ) : (
                 <>
                     <Navbar/>
                     <Hero/>
-                    <VisiMisi/>
+                    <VisiMisiMain/>
                     <Program/>
                     <Profile/>
                     <About/>
                     <Footer/>
                 </>
             )}
-            {/*{loading ? (*/}
-            {/*    <Preloader/>*/}
-            {/*) : (*/}
-            {/*    <>*/}
-            {/*        <Navbar/>*/}
-            {/*        <Hero/>*/}
-            {/*        <VisiMisi/>*/}
-            {/*        <Program/>*/}
-            {/*        <Profile/>*/}
-            {/*        <About/>*/}
-            {/*        <Footer/>*/}
-            {/*    </>*/}
-            {/*)}*/}
         </main>
     );
 }

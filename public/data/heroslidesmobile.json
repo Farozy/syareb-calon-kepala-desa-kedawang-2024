@@ -1,0 +1,22 @@
+[
+  {
+    "image": "satu.png",
+    "title": "gambar satu"
+  },
+  {
+    "image": "dua.jpeg",
+    "title": "gambar dua"
+  },
+  {
+    "image": "tiga.png",
+    "title": "gambar tiga"
+  },
+  {
+    "image": "empat.jpeg",
+    "title": "gambar empat"
+  },
+  {
+    "image": "lima.png",
+    "title": "gambar lima"
+  }
+]

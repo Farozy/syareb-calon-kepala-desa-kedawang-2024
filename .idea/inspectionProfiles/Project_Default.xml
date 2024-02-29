@@ -1,18 +1,23 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="BadExpressionStatementJS" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="CssInvalidPropertyValue" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myCustomPropertiesEnabled" value="true" />
       <option name="myIgnoreVendorSpecificProperties" value="false" />
       <option name="myCustomPropertiesList">
         <value>
-          <list size="1">
+          <list size="4">
             <item index="0" class="java.lang.String" itemvalue="transform" />
+            <item index="1" class="java.lang.String" itemvalue="align-items" />
+            <item index="2" class="java.lang.String" itemvalue="justify-content" />
+            <item index="3" class="java.lang.String" itemvalue="flex-item-align" />
           </list>
         </value>
       </option>
     </inspection_tool>
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="HtmlUnknownAnchorTarget" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
@@ -26,6 +31,7 @@
       </option>
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
+    <inspection_tool class="JSFunctionExpressionToArrowFunction" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="JSIgnoredPromiseFromCall" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="JSUnresolvedReference" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="TypeScriptValidateJSTypes" enabled="false" level="WEAK WARNING" enabled_by_default="false" />

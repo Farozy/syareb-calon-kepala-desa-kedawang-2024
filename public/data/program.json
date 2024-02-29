@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "sid.jpg",
+    "title": "Sistem Informasi Desa",
+    "description": "Sistem Informasi Desa (SID) adalah sebuah sistem yang dirancang untuk mengumpulkan, menyimpan, mengelola, mengolah, dan menyajikan informasi yang berkaitan dengan kegiatan administratif, ekonomi, sosial, dan budaya di sebuah desa. Dengan implementasi Sistem Informasi Desa (SID) yang baik, diharapkan pengelolaan dan pembangunan desa dapat lebih terarah, efisien, dan berdampak positif bagi kesejahteraan masyarakat desa secara keseluruhan."
+  },
+  {
+    "id": 2,
+    "image": "sdm.jpg",
+    "title": "Peningkatan SDM Desa",
+    "description": "Meningkatkan sumber daya manusia (SDM) desa adalah suatu upaya yang penting dalam pembangunan desa karena SDM yang berkualitas dapat menjadi motor penggerak pembangunan yang berkelanjutan. Meningkatkan sumber daya manusia di desa memerlukan komitmen, kerjasama, dan upaya bersama dari berbagai pihak, termasuk pemerintah, lembaga swadaya masyarakat, sektor swasta, serta masyarakat desa itu sendiri."
+  },
+  {
+    "id": 3,
+    "image": "jaringan.jpg",
+    "title": "Jaringan Internet Desa",
+    "description": "Kesenjangan jaringan internet di desa mengacu pada ketidaksetaraan akses dan kualitas layanan internet antara wilayah pedesaan atau desa dengan wilayah perkotaan. Upaya untuk mengatasi kesenjangan jaringan internet di desa memerlukan kolaborasi antara pemerintah, sektor swasta, dan organisasi non-pemerintah untuk membangun infrastruktur telekomunikasi yang lebih baik, meningkatkan aksesibilitas dan pengetahuan teknologi informasi di desa, serta menyediakan layanan internet yang terjangkau bagi penduduk desa."
+  },
+  {
+    "id": 4,
+    "image": "keamanan.jpg",
+    "title": "Sistem Keamanan Desa",
+    "description": "Sistem keamanan desa merujuk pada serangkaian langkah dan strategi yang diterapkan untuk menjaga keamanan dan ketertiban di lingkungan desa atau pedesaan. Sistem keamanan desa melibatkan partisipasi aktif dari masyarakat setempat, pemerintah desa, lembaga keamanan, serta unsur-unsur lain dalam komunitas. Dengan menerapkan sistem keamanan desa yang holistik dan melibatkan semua stakeholder yang terlibat, diharapkan masyarakat desa dapat hidup dalam lingkungan yang aman, damai, dan sejahtera."
+  }
+]

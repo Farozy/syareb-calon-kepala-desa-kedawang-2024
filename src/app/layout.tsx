@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "No. 0 Fulana",
+    title: "No. 4 Syareb",
     description: "Calon Kepala Desa Kedawang",
 };
 

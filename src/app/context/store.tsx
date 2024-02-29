@@ -2,12 +2,12 @@
 import {createContext, useContext, Dispatch, SetStateAction, useState} from "react";
 interface ContextProps {
     modal: boolean,
-    setModal: Dispatch<SetStateAction<boolean>>,
+    setModal: Dispatch<SetStateAction<boolean>>
 }
 
 const GlobalContext = createContext<ContextProps>({
     modal: true,
-    setModal: (): boolean => true,
+    setModal: (): boolean => true
 });
 
 export const GlobalContextProvider = ({children}: any) => {

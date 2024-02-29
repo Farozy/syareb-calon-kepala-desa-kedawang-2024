@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Beranda",
+    "link": "#beranda"
+  },
+  {
+    "title": "Visi & Misi",
+    "link": "#visimisi"
+  },
+  {
+    "title": "Program",
+    "link": "#program"
+  },
+  {
+    "title": "Profil",
+    "link": "#profile"
+  },
+  {
+    "title": "Tentang",
+    "link": "#tentang"
+  }
+]

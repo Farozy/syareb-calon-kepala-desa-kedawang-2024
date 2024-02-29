@@ -1,0 +1,20 @@
+
+a.navbar:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #F28123;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+a.navbar:hover:after {
+    transform: scaleX(1);
+}
+
+.active {
+    color: rgb(37, 99, 235);
+    padding-bottom: 3px;
+    border-bottom: solid 2px #F28123;
+    transform: scaleX(0);
+    transition: transform 500s ease-in-out;
+}
