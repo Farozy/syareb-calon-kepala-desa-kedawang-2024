@@ -29,7 +29,6 @@ export default function SwiperImage() {
     return (
         <div
             className={`relative overflow-hidden w-full mx-auto lg:w-8/12 lg:max-w-full`}
-
         >
             <svg
                 className={`absolute left-0 hidden text-white transform -translate-x-[59%] xl:block z-10 ${zoomImage ? "invisible" : "hidden"}`}
