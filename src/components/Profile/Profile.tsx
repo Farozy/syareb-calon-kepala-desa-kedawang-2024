@@ -23,7 +23,7 @@ export default function Profile() {
                         {/*    className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"*/}
                         {/*    style={{backgroundImage: `url('https://source.unsplash.com/MP0IUfwrn0A')`}}></div>*/}
                         <Image
-                            src="/images/caleg2.jpg" alt="photo" width={100} height={100}
+                            src="/images/caleg2.png" alt="photo" width={100} height={100}
                             className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-40 w-40 bg-cover bg-center"
                         />
                         <Biodata/>
