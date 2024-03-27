@@ -47,7 +47,7 @@ export default function WelcomeForm() {
                         setModal(false);
                         const exp = expiryToken * 1000;
                         const expirationDate = new Date(exp);
-                        Cookies.set(kadesCookie, token, {expires: expirationDate});
+                        Cookies.set(kadesCookie, token, {expires: expirationDate, secure: true});
                     }, 2000)
                 }
             })
