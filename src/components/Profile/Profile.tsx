@@ -31,7 +31,7 @@ export default function Profile() {
                 </div>
                 <div className="w-full lg:w-2/5">
                     <Image
-                        src="/images/caleg2.jpg" alt="photo" width={500} height={500}
+                        src="/images/caleg2.png" alt="photo" width={500} height={500}
                         className="rounded-none lg:rounded-r-lg shadow-2xl hidden lg:block"
                     />
                 </div>
