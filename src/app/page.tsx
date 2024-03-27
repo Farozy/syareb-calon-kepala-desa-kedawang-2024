@@ -11,21 +11,22 @@ import Preloader from "@/components/Preloader/Preloader";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import WelcomeMain from "@/components/Welcome/WelcomeMain";
-import { useGlobalContext } from "./context/store";
+import {useGlobalContext} from "./context/store";
 import Cookies from "js-cookie";
 import axios from "axios";
 import {ApiToken} from "@/config/API";
 import {isTokenExpired} from "@/utils/Token";
 import {Toast} from "@/utils/Toast";
+import {kadesCookie} from "@/config/Cookie";
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
-    const { modal, setModal } = useGlobalContext();
+    const {modal, setModal} = useGlobalContext();
     const [expiredToken, setExpiredToken] = useState(true);
-    const token_kades: any = Cookies.get('token_kades');
+    const token_kades: any = Cookies.get(kadesCookie);
 
     useEffect(() => {
-        if(!modal || expiredToken) {
+        if (!modal || expiredToken) {
             setTimeout(() => {
                 setLoading(false);
             }, 5000);
@@ -36,7 +37,7 @@ const Home = () => {
 
     useEffect(() => {
         const checkToken = async () => {
-            if(token_kades !== undefined) {
+            if (token_kades !== undefined) {
                 await axios({
                     method: 'get',
                     url: ApiToken,
@@ -47,7 +48,7 @@ const Home = () => {
                     .then(async (response: any) => {
                         const expiryToken = await response.data.data.expiry_date;
                         const resExpiryToken: any = isTokenExpired(expiryToken);
-                        if(!resExpiryToken) {
+                        if (!resExpiryToken) {
                             setExpiredToken(resExpiryToken);
                             setModal(false);
                         }

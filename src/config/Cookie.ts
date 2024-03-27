@@ -1,0 +1,1 @@
+export const kadesCookie = 'kades_cookie';

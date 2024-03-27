@@ -8,6 +8,7 @@ import {useFormik} from "formik";
 import * as Yup from "yup";
 import {ApiToken} from "@/config/API";
 import Cookies from 'js-cookie';
+import {kadesCookie} from "@/config/Cookie";
 
 export default function WelcomeForm() {
     const [isLoading, setIsloading] = useState(false)
@@ -44,7 +45,9 @@ export default function WelcomeForm() {
                 } else {
                     setTimeout(() => {
                         setModal(false);
-                        Cookies.set('token_kades', token);
+                        const exp = expiryToken * 1000;
+                        const expirationDate = new Date(exp);
+                        Cookies.set(kadesCookie, token, {expires: expirationDate});
                     }, 2000)
                 }
             })
