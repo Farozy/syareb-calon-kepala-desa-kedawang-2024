@@ -74,7 +74,7 @@ const Home = () => {
 
     return (
         <main className="min-h-screen w-full">
-            {loading ? <Preloader/> : expiredToken && modal ? (
+            {loading ? <Preloader/> : !token_kades ? (
                 <WelcomeMain/>
             ) : (
                 <>
